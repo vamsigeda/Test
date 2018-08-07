@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "src",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "module":"esNext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "paths":{
+        "@api":["app/core/api/index"],
+        "@services":["app/core/services/index"],
+        "@interfaces":["app/core/interfaces/index"],
+        "@models":["app/core/models/index"],
+        "@modules/*":["app/modules/*"],
+        "@workspace":["app/core/workspace-definitions/index"],
+        "@shared/*":["app/shared/*"],
+        "@core/*":["app/core/*"],
+        "@env":["environments/environment"]
+    },
+    "target": "es5",
+    "types": ["node"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  }
+}
